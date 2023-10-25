@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+</head>
+
+<body>
+    <h1>Render JSON Data as HTML</h1>
+    <button class="btn">Render JSON</button>
+    <p id="demo"></p>
+    <script>
+        const button = document.querySelector(".btn");
+        button.addEventListener("click", buttonClickHandler)
+
+        async function fetchData(url) {
+            const response = await fetch(url)
+            const data = await response.json()
+            return data
+        }
+
+        function renderData(data) {
+            const renderedHTML = data.map((item) => {
+                return `<div class="item">${item.name}</div>`
+            }).join('')
+
+            document.getElementById("demo").innerHTML = renderedHTML
+        }
+
+        async function buttonClickHandler() {
+            const data = await fetchData('./data.json')
+            renderData(data)
+        }
+    </script>
+</body>
+
+</html>
