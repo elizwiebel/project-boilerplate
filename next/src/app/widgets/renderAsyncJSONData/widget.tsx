@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-// import styles from './page.module.css'
+// import styles from './widget.module.css'
 
 export default function RenderAsyncJSONData() {
     const [data, setData] = useState(null);
