@@ -17,7 +17,7 @@ export default function RenderAsyncJSONData() {
             console.log('fetching data starts');
 
             try {
-                const response = await fetch('/datad.json');
+                const response = await fetch('/data.json');
                 const data = await response.json();
 
                 if (!response.ok) {
