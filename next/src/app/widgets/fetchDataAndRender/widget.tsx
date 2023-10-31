@@ -1,14 +1,13 @@
 'use client';
 
+import styles from './widget.module.css';
 import React, { useState, useEffect } from 'react';
-// import styles from './widget.module.css'
 
-export default function RenderAsyncJSONData() {
+export default function Widget() {
+    console.log('component starts');
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-
-    console.log('component renders');
 
     useEffect(() => {
         console.log('useEffect with no dependencies runs');
@@ -45,10 +44,13 @@ export default function RenderAsyncJSONData() {
     }
 
     return (
-        <ul>
-            {data.map((item) => (
-                <li key={item._id}>{item.name}</li>
-            ))}
-        </ul>
+        <div className={styles.wrapper}>
+            <h1>fetchDataAndRender</h1>
+            <ul>
+                {data.map((item) => (
+                    <li key={item._id}>{item.name}</li>
+                ))}
+            </ul>
+        </div>
     );
 }

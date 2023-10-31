@@ -1,17 +1,17 @@
 'use client';
 
-import React, { useState } from 'react';
 import styles from './widget.module.css';
+import React, { useState } from 'react';
 
-export default function RenderInputOnChange() {
+export default function Widget() {
+    console.log('component starts');
     const [inputText, setInputText] = useState(null);
-
-    console.log('component renders');
 
     return (
         <div className={styles.wrapper}>
+            <h1>onInputChangeRenderText</h1>
             <label>
-                Input:{' '}
+                Input:
                 <input
                     type='text'
                     onChange={(e) => setInputText(e.target.value)}
