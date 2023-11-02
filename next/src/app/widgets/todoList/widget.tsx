@@ -56,7 +56,7 @@ export default function Widget() {
 
     return (
         <div className={styles.wrapper}>
-            <h1>Todo List</h1>
+            <h1>todoList</h1>
             <form onSubmit={formSubmitHandler} className={styles.addItemForm}>
                 <div className={styles.newItemInput}>
                     <label htmlFor='item'>New Item:</label>
