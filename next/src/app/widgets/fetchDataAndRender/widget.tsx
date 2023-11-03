@@ -16,7 +16,7 @@ export default function Widget() {
             console.log('fetching data starts');
 
             try {
-                const response = await fetch('/data.json');
+                const response = await fetch('/data-pokemon.json');
                 const data = await response.json();
 
                 if (!response.ok) {
@@ -24,7 +24,7 @@ export default function Widget() {
                     throw new Error(message);
                 }
 
-                setData(data);
+                setData(data.results);
                 setLoading(false);
             } catch (error) {
                 setError(error);
@@ -48,7 +48,7 @@ export default function Widget() {
             <h1>fetchDataAndRender</h1>
             <ul>
                 {data.map((item) => (
-                    <li key={item._id}>{item.name}</li>
+                    <li key={item.name}>{item.name}</li>
                 ))}
             </ul>
         </div>
