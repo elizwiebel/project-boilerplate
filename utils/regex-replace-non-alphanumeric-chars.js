@@ -1,10 +1,10 @@
 // Regex Breakdown
 
-// / / mark the beginning and end of a regular expression
+// / / marks the beginning and end of a regular expression
 // [ ] are the beginning and end of a character set
 // \W matches "non-word" characters, as opposed to \w which will match word characters. Equivalent to [^A-Za-z0-9_]
 // _ is the "_" character
-// The g flag means it's a global search
+// The g flag means use a global search
 
 const regexReplaceNonAlphanumericChars = (str, newChar) => {
     return str.replace(/[\W_]/g, newChar)

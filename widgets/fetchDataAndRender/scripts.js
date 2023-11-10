@@ -1,5 +1,4 @@
 const button = document.querySelector(".btn")
-button.addEventListener("click", buttonClickHandler)
 
 async function fetchData(url) {
     const response = await fetch(url)
@@ -20,3 +19,5 @@ async function buttonClickHandler() {
     console.log('data', data)
     renderData(data)
 }
+
+button.addEventListener("click", buttonClickHandler)
