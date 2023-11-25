@@ -1,4 +1,4 @@
-;(function (): void {
+;((): void => {
     type Pokemon = {
         name: string
         url: string
@@ -12,8 +12,7 @@
 
     function renderData(data: Pokemon): void {
         const renderedHTML = data.map((item) => `<div class="item">${item.name}</div>`).join("")
-
-        if (demo) demo.innerHTML = renderedHTML
+        dataContainer.innerHTML = renderedHTML
     }
 
     async function buttonClickHandler(): Promise<void> {
@@ -22,7 +21,8 @@
         renderData(data)
     }
 
-    const demo = document.getElementById("demo")
-    const button: HTMLElement | null = document.querySelector(".btn")
-    button?.addEventListener("click", buttonClickHandler)
+    const dataContainer: HTMLElement = document.getElementById("data-container")!
+    const button: HTMLElement = document.querySelector(".btn")!
+
+    button.addEventListener("click", buttonClickHandler)
 })()

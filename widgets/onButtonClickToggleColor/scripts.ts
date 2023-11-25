@@ -1,8 +1,6 @@
-;(function (): void {
+;((): void => {
     function btnClickHandler(): void {
         console.log("click")
-
-        if (!content) return
         content.classList.toggle("--red")
 
         // This check also works but it is not as simple
@@ -15,7 +13,8 @@
         // }
     }
 
-    const button: HTMLElement | null = document.querySelector(".js-toggle-btn")
-    const content: HTMLElement | null = document.querySelector(".js-toggle-content")
-    button?.addEventListener("click", btnClickHandler)
+    const button: HTMLElement = document.querySelector(".js-toggle-btn")!
+    const content: HTMLElement = document.querySelector(".js-toggle-content")!
+
+    button.addEventListener("click", btnClickHandler)
 })()
