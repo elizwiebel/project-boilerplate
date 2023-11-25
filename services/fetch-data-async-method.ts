@@ -1,4 +1,4 @@
-const fetchDataAsyncMethod = async (url) => {
+async function fetchDataAsyncMethod(url: string): Promise<any> {
     try {
         const response = await fetch(url)
 

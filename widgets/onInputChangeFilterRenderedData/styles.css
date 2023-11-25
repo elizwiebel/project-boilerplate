@@ -1,13 +1,10 @@
 /* GLOBAL STYLES START */
-
 * {
     box-sizing: border-box;
 }
-
 /* GLOBAL STYLES END */
 
 /* TEMPLATE STYLES START */
-
 .template-title {
     margin-left: 1rem;
 }
@@ -19,13 +16,12 @@
     border: 1px solid grey;
     border-radius: 10px;
 }
+/* TEMPLATE STYLES END */
 
-/* WIDGET STYLES END */
-
+/* WIDGET STYLES START */
 .widget-container {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
-
-/* WIDGET STYLES START */
+/* WIDGET STYLES END */

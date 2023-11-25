@@ -7,8 +7,10 @@ function onChangeHandler(event) {
 }
 
 function renderInputText(text) {
-    // displayElement.innerHTML = text // This works but is a potential security risk because the value is set based on user Input
     displayElement.textContent = text
+
+    // This is a potential security risk because the value is set based on user input
+    // displayElement.innerHTML = text
 }
 
 // inputText.addEventListener('change', onChangeHandler) // This syntax also works

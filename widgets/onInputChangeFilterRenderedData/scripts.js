@@ -1,8 +1,3 @@
-const button = document.querySelector(".btn")
-const input = document.querySelector(".input")
-
-let resultsData = []
-
 async function fetchData(url) {
     const response = await fetch(url)
     const data = await response.json()
@@ -31,7 +26,7 @@ function filterData(query) {
 }
 
 async function buttonClickHandler() {
-    const data = await fetchData("../data-pokemon.json")
+    const data = await fetchData("../../data/pokemon.json")
     console.log("click", data)
     clearInputValue()
     renderData(data)
@@ -43,6 +38,10 @@ function inputHandler(event) {
     const filteredResults = filterData(event.target.value)
     renderData(filteredResults)
 }
+
+const button = document.querySelector(".btn")
+const input = document.querySelector(".input")
+let resultsData = []
 
 button.addEventListener("click", buttonClickHandler)
 input.addEventListener("input", inputHandler)
