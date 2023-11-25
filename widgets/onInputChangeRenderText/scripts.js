@@ -1,8 +1,8 @@
-const inputText = document.querySelector('.js-input-text')
-const displayElement = document.querySelector('.js-display-element')
+const inputText = document.querySelector(".js-input-text")
+const displayElement = document.querySelector(".js-display-element")
 
 function onChangeHandler(event) {
-    console.log('change', event)
+    console.log("change", event)
     renderInputText(event.target.value)
 }
 
@@ -12,4 +12,4 @@ function renderInputText(text) {
 }
 
 // inputText.addEventListener('change', onChangeHandler) // This syntax also works
-inputText.addEventListener('change', event => onChangeHandler(event))
+inputText.addEventListener("change", (event) => onChangeHandler(event))

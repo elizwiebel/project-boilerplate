@@ -7,16 +7,18 @@ async function fetchData(url) {
 }
 
 function renderData(data) {
-    const renderedHTML = data.map((item) => {
-        return `<div class="item">${item.name}</div>`
-    }).join('')
+    const renderedHTML = data
+        .map((item) => {
+            return `<div class="item">${item.name}</div>`
+        })
+        .join("")
 
     document.getElementById("demo").innerHTML = renderedHTML
 }
 
 async function buttonClickHandler() {
-    const data = await fetchData('../data-pokemon.json')
-    console.log('data', data)
+    const data = await fetchData("../data-pokemon.json")
+    console.log("data", data)
     renderData(data)
 }
 

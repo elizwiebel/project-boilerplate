@@ -11,30 +11,34 @@ async function fetchData(url) {
 }
 
 function renderData(data) {
-    const renderedHTML = data.map((item) => {
-        return `<div class="item">${item.name}</div>`
-    }).join('')
+    const renderedHTML = data
+        .map((item) => {
+            return `<div class="item">${item.name}</div>`
+        })
+        .join("")
 
     document.getElementById("demo").innerHTML = renderedHTML
 }
 
 function clearInputValue() {
-    input.value = ''
+    input.value = ""
 }
 
 function filterData(query) {
-    return resultsData.filter(item => item.name.toLowerCase().includes(query.toLowerCase()))
+    return resultsData.filter((item) =>
+        item.name.toLowerCase().includes(query.toLowerCase()),
+    )
 }
 
 async function buttonClickHandler() {
-    const data = await fetchData('../data-pokemon.json')
-    console.log('click', data)
+    const data = await fetchData("../data-pokemon.json")
+    console.log("click", data)
     clearInputValue()
     renderData(data)
 }
 
 function inputHandler(event) {
-    console.log('input', event.target.value)
+    console.log("input", event.target.value)
 
     const filteredResults = filterData(event.target.value)
     renderData(filteredResults)

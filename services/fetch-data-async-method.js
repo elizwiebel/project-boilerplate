@@ -1,18 +1,17 @@
 const fetchDataAsyncMethod = async (url) => {
-  try {
-    const response = await fetch(url)
+    try {
+        const response = await fetch(url)
 
-    if (!response.ok) {
-      const message = `${response.status}`;
-      throw new Error(message);
+        if (!response.ok) {
+            const message = `${response.status}`
+            throw new Error(message)
+        }
+
+        const data = await response.json()
+        return data
+    } catch (error) {
+        console.error(error)
     }
-
-    const data = await response.json()
-    return data
-  }
-  catch (error) {
-    console.error(error)
-  }
 }
 
 // TEST CONFIG

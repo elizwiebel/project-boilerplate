@@ -1,4 +1,4 @@
-const reduceSum = (nums, initialValue) => {
+function reduceSum(nums, initialValue) {
     return nums.reduce((total, num) => total + num, initialValue)
 }
 

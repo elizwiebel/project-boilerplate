@@ -1,6 +1,6 @@
-const regexFindPatternInString = (regex, str) => {
+function regexFindPatternInString(regex, str) {
     return regex.test(str)
 }
 
 // TEST CONFIG
-// console.log(regexFindPatternInString(/hello/, 'hello world'))
+// console.log(regexFindPatternInString(/hello/, "hello world"))

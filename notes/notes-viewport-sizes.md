@@ -31,7 +31,7 @@
 -   iPad Pro 11" (6th gen 2022) Landscape = 1194 x 834
 -   iPad Pro 12.9" (6th gen 2022) Landscape = 1366 x 1024
 
-#### VLaptops
+#### Laptops
 
 -   Macbook Air 13" (2020) = 1280 x 800
 -   Macbook Pro 13" (2021) = 1440 x 820
@@ -40,5 +40,5 @@
 
 #### Monitors
 
--   Monitor 1080p = 1920 x 976
--   Monitor 2560p = 2560 x 1243
+-   Monitor 1080p 16:9 = 1920 x 976
+-   Monitor 1440p 16:9 = 2560 x 1243
