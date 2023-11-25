@@ -10,7 +10,6 @@
         test.addEventListener("click", (e) => btnClickHandler(e, i));
     }
     function btnClickHandler(e, i) {
-        console.log("click", e, i);
         if (i === currentTab)
             return;
         if (i >= tabContents.length)
