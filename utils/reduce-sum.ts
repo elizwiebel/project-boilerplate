@@ -1,4 +1,4 @@
-function reduceSum(nums: number[], initialValue: number): number {
+export default function reduceSum(nums: number[], initialValue: number): number {
     return nums.reduce((total, num) => total + num, initialValue)
 }
 

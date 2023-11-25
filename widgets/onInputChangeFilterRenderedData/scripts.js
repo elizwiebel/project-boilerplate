@@ -39,9 +39,10 @@ function inputHandler(event) {
     renderData(filteredResults)
 }
 
+let resultsData = []
+
 const button = document.querySelector(".btn")
 const input = document.querySelector(".input")
-let resultsData = []
 
 button.addEventListener("click", buttonClickHandler)
 input.addEventListener("input", inputHandler)

@@ -1,4 +1,4 @@
-function regexFindPatternInString(regex: RegExp, str: string): boolean {
+export default function regexFindPatternInString(regex: RegExp, str: string): boolean {
     return regex.test(str)
 }
 

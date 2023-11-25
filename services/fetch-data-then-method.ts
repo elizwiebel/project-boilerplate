@@ -1,4 +1,4 @@
-function fetchDataThenMethod(url: string): Promise<any> {
+export default function fetchDataThenMethod(url: string): Promise<any> {
     return fetch(url)
         .then((response) => {
             if (!response.ok) {

@@ -1,4 +1,4 @@
-async function fetchDataAsyncMethod(url: string): Promise<any> {
+export default async function fetchDataAsyncMethod(url: string): Promise<any> {
     try {
         const response = await fetch(url)
 
