@@ -1,0 +1,53 @@
+/* GLOBAL STYLES START */
+* {
+    box-sizing: border-box;
+}
+/* GLOBAL STYLES END */
+
+/* TEMPLATE STYLES START */
+.template-title {
+    margin-left: 1rem;
+}
+
+.template-container {
+    min-height: 250px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+/* TEMPLATE STYLES END */
+
+/* WIDGET STYLES START */
+.tab-btn-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid grey;
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+}
+
+.tab-btn.--active {
+    background-color: lightgrey;
+}
+
+.tab-content-container {
+    border: 1px solid grey;
+    padding: 0.5rem;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.--active {
+    display: block;
+}
+/* WIDGET STYLES END */
