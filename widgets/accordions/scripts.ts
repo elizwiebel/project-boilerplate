@@ -3,7 +3,7 @@
 
     for (const btn of accordionBtns) {
         btn.addEventListener("click", (e: Event): void => {
-            const currentElement = e.target as HTMLInputElement
+            const currentElement = e.target as HTMLElement
             const panel = currentElement.nextElementSibling
 
             if (!panel) return
