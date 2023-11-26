@@ -1,3 +1,6 @@
+# JS Destructuring Syntax
+
+```typescript
 const pokemonData = {
     name: "squirtle",
     url: "https://pokeapi.co/api/v2/pokemon/7/",
@@ -29,3 +32,4 @@ const {
     },
 } = pokemonData
 console.log("second location:", secondLocation) // second location: grass
+```

@@ -1,3 +1,6 @@
+# DOM Manipulation Methods
+
+```typescript
 // In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized.
 const div: HTMLDivElement = document.createElement("div")
 
@@ -87,3 +90,4 @@ element.style
 
 // It is possible to set an inline style by assigning a string directly to the style property.
 element.style.backgroundColor = "red"
+```

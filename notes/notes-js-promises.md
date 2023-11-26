@@ -1,3 +1,6 @@
+# JS Promises
+
+```typescript
 function testPromise(): Promise<string> {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -13,3 +16,4 @@ testPromise()
     .catch((error) => {
         console.log("error", error)
     })
+```
