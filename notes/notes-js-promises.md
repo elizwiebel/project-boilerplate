@@ -1,7 +1,7 @@
 # JS Promises
 
 ```typescript
-function testPromise(): Promise<string> {
+function testPromise01(): Promise<string> {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve("foo")
@@ -9,11 +9,23 @@ function testPromise(): Promise<string> {
     })
 }
 
-testPromise()
+function testPromise02(): Promise<string> {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("foo")
+        }, 300)
+    })
+}
+
+testPromise01()
     .then((message) => {
         console.log("message:", message)
     })
     .catch((error) => {
         console.log("error", error)
     })
+
+Promise.all([testPromise01(), testPromise02()]).then((messages) => {
+    console.log("messages:", messages)
+})
 ```
