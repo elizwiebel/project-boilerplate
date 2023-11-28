@@ -1,6 +1,10 @@
 "use strict";
 ;
 (() => {
+    const button = document.querySelector(".btn");
+    const input = document.querySelector(".input");
+    const dataContainer = document.getElementById("data-container");
+    let resultsData = [];
     async function fetchData(url) {
         const response = await fetch(url);
         const data = await response.json();
@@ -34,10 +38,6 @@
         const filteredResults = filterData(inputValue, resultsData);
         renderData(filteredResults, dataContainer);
     }
-    let resultsData = [];
-    const button = document.querySelector(".btn");
-    const input = document.querySelector(".input");
-    const dataContainer = document.getElementById("data-container");
     button.addEventListener("click", buttonClickHandler);
     input.addEventListener("input", inputHandler);
 })();

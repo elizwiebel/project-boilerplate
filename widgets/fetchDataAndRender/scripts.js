@@ -1,6 +1,8 @@
 "use strict";
 ;
 (() => {
+    const dataContainer = document.getElementById("data-container");
+    const button = document.querySelector(".btn");
     async function fetchData(url) {
         const response = await fetch(url);
         const data = await response.json();
@@ -15,7 +17,5 @@
         console.log("data", data);
         renderData(data);
     }
-    const dataContainer = document.getElementById("data-container");
-    const button = document.querySelector(".btn");
     button.addEventListener("click", buttonClickHandler);
 })();

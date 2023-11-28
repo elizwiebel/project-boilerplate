@@ -1,6 +1,8 @@
 "use strict";
 ;
 (() => {
+    const button = document.querySelector(".js-toggle-btn");
+    const content = document.querySelector(".js-toggle-content");
     function btnClickHandler() {
         console.log("click");
         content.classList.toggle("--red");
@@ -13,7 +15,5 @@
         //     content.style.color = "red"
         // }
     }
-    const button = document.querySelector(".js-toggle-btn");
-    const content = document.querySelector(".js-toggle-content");
     button.addEventListener("click", btnClickHandler);
 })();

@@ -1,4 +1,7 @@
 ;((): void => {
+    const button: HTMLElement = document.querySelector(".js-toggle-btn")!
+    const content: HTMLElement = document.querySelector(".js-toggle-content")!
+
     function btnClickHandler(): void {
         console.log("click")
         content.classList.toggle("--red")
@@ -12,9 +15,6 @@
         //     content.style.color = "red"
         // }
     }
-
-    const button: HTMLElement = document.querySelector(".js-toggle-btn")!
-    const content: HTMLElement = document.querySelector(".js-toggle-content")!
 
     button.addEventListener("click", btnClickHandler)
 })()

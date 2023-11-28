@@ -4,6 +4,12 @@
         url: string
     }[]
 
+    const button: HTMLElement = document.querySelector(".btn")!
+    const input: HTMLInputElement = document.querySelector(".input")!
+    const dataContainer: HTMLElement = document.getElementById("data-container")!
+
+    let resultsData: Pokemon = []
+
     async function fetchData(url: string) {
         const response = await fetch(url)
         const data = await response.json()
@@ -44,12 +50,6 @@
         const filteredResults = filterData(inputValue, resultsData)
         renderData(filteredResults, dataContainer)
     }
-
-    let resultsData: Pokemon = []
-
-    const button: HTMLElement = document.querySelector(".btn")!
-    const input: HTMLInputElement = document.querySelector(".input")!
-    const dataContainer: HTMLElement = document.getElementById("data-container")!
 
     button.addEventListener("click", buttonClickHandler)
     input.addEventListener("input", inputHandler)

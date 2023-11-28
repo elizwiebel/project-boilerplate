@@ -1,6 +1,7 @@
 ;((): void => {
     const tabBtns = document.querySelectorAll(".tab-btn")
     const tabContents = document.querySelectorAll(".tab-content")
+
     let currentTab = 0
 
     for (let i = 0; i < tabBtns.length; i++) {

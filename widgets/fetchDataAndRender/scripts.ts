@@ -4,6 +4,9 @@
         url: string
     }[]
 
+    const dataContainer: HTMLElement = document.getElementById("data-container")!
+    const button: HTMLElement = document.querySelector(".btn")!
+
     async function fetchData(url: string): Promise<Pokemon> {
         const response = await fetch(url)
         const data = await response.json()
@@ -20,9 +23,6 @@
         console.log("data", data)
         renderData(data)
     }
-
-    const dataContainer: HTMLElement = document.getElementById("data-container")!
-    const button: HTMLElement = document.querySelector(".btn")!
 
     button.addEventListener("click", buttonClickHandler)
 })()
