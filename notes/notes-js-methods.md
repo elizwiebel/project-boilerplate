@@ -132,6 +132,15 @@
 -   JSON.parse()
 -   JSON.stringify()
 
-# JS DOM API Methods
+# JS Browser and DOM Methods
 
 -   fetch()
+-   setInterval()
+-   clearInterval()
+-   setTimeout()
+-   clearTimeout()
+-   localStorage.setItem()
+-   localStorage.getItem()
+-   localStorage.removeItem()
+-   localStorage.clear()
+-   document.cookie
