@@ -1,5 +1,4 @@
 "use strict";
-;
 (() => {
     const tabBtns = document.querySelectorAll(".tab-btn");
     const tabContents = document.querySelectorAll(".tab-content");
@@ -21,3 +20,4 @@
         currentTab = i;
     }
 })();
+//# sourceMappingURL=scripts.js.map

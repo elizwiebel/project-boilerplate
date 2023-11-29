@@ -1,6 +1,10 @@
-## JS String Methods
+# JS Methods
+
+## JS String Properties
 
 -   String: length
+
+## JS String Methods
 
 -   String.prototype.slice()
 -   String.prototype.split()
@@ -28,6 +32,8 @@
 -   String.prototype.endsWith()
 -   String.prototype.search()
 
+## JS String Replace Methods
+
 -   String.prototype.replace()
 -   String.prototype.replaceAll()
 
@@ -38,16 +44,17 @@
 -   Number.isNaN()
 -   Number.parseFloat()
 -   Number.parseInt()
-
 -   Number.prototype.toExponential()
 -   Number.prototype.toFixed()
 -   Number.prototype.toPrecision()
 -   Number.prototype.toString()
 -   Number.prototype.valueOf()
 
-## JS Array Methods
+## JS Array Properties
 
 -   Array: length
+
+## JS Array Methods
 
 -   Array.prototype.push()
 -   Array.prototype.pop()
@@ -92,8 +99,8 @@
 -   Object.entries()
 -   Object.keys()
 -   Object.values()
+-   Object.assign()
 -   Object.freeze()
-
 -   Object.prototype.hasOwnProperty()
 
 ## JS Math Methods
@@ -106,7 +113,6 @@
 -   Math.LN10
 -   Math.LOG2E
 -   Math.LOG10E
-
 -   Math.abs()
 -   Math.floor()
 -   Math.max()
@@ -120,3 +126,12 @@
 -   Math.log10()
 -   Math.log1p()
 -   Math.log2()
+
+# JS Static Methods
+
+-   JSON.parse()
+-   JSON.stringify()
+
+# JS DOM API Methods
+
+-   fetch()

@@ -1,5 +1,4 @@
 "use strict";
-;
 (() => {
     const dataContainer = document.getElementById("data-container");
     const button = document.querySelector(".btn");
@@ -19,3 +18,4 @@
     }
     button.addEventListener("click", buttonClickHandler);
 })();
+//# sourceMappingURL=scripts.js.map

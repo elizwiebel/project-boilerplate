@@ -1,12 +1,12 @@
-;((): void => {
-    const button: HTMLElement = document.querySelector(".js-toggle-btn")!
-    const content: HTMLElement = document.querySelector(".js-toggle-content")!
+((): void => {
+    const button = document.querySelector(".js-toggle-btn") as HTMLElement;
+    const content = document.querySelector(".js-toggle-content") as HTMLElement;
 
     function btnClickHandler(): void {
-        console.log("click")
-        content.classList.toggle("--red")
+        console.log("click");
+        content.classList.toggle("--red");
 
-        // This check also works but it is not as simple
+        // // This check also works but it is not as simple
         // if (content.style.color === "red") {
         //     content.removeAttribute("style")
         //     // This also works but leaves the style attribute in the HTML
@@ -16,5 +16,5 @@
         // }
     }
 
-    button.addEventListener("click", btnClickHandler)
-})()
+    button.addEventListener("click", btnClickHandler);
+})();

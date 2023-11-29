@@ -1,5 +1,4 @@
 "use strict";
-;
 (() => {
     const button = document.querySelector(".btn");
     const input = document.querySelector(".input");
@@ -41,3 +40,4 @@
     button.addEventListener("click", buttonClickHandler);
     input.addEventListener("input", inputHandler);
 })();
+//# sourceMappingURL=scripts.js.map

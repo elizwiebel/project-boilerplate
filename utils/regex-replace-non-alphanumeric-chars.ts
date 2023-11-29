@@ -7,8 +7,8 @@
 // The g flag means use a global search
 
 export default function regexReplaceNonAlphanumericChars(str: string, newChar: string): string {
-    return str.replace(/[\W_]/g, newChar)
+    return str.replace(/[\W_]/g, newChar);
 }
 
 // TEST CONFIG
-// console.log(regexReplaceNonAlphanumericChars("A man, a_plan, a canal: Panama", ""))
+// console.log(regexReplaceNonAlphanumericChars("A man, a_plan, a canal: Panama", ""));

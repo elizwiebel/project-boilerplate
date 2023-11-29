@@ -1,15 +1,14 @@
-;((): void => {
-    const accordionBtns: NodeListOf<Element> = document.querySelectorAll(".accordion-btn")
+((): void => {
+    const accordionBtns = document.querySelectorAll(".accordion-btn") as NodeListOf<HTMLElement>;
 
     for (const btn of accordionBtns) {
         btn.addEventListener("click", (e: Event): void => {
-            const currentElement = e.target as HTMLElement
-            const panel = currentElement.nextElementSibling
+            const panel = (e.target as HTMLElement).nextElementSibling;
 
-            if (!panel) return
+            if (!panel) return;
 
-            currentElement.classList.toggle("--open")
-            panel.classList.toggle("--open")
-        })
+            (e.target as HTMLElement).classList.toggle("--open");
+            panel.classList.toggle("--open");
+        });
     }
-})()
+})();

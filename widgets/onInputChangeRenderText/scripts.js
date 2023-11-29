@@ -17,3 +17,4 @@
     // inputText.addEventListener('change', onChangeHandler)
     inputText.addEventListener("change", (e) => onChangeHandler(e));
 })();
+//# sourceMappingURL=scripts.js.map

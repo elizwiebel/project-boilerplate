@@ -1,6 +1,6 @@
 export default function regexFindPatternInString(regex: RegExp, str: string): boolean {
-    return regex.test(str)
+    return regex.test(str);
 }
 
 // TEST CONFIG
-// console.log(regexFindPatternInString(/hello/, "hello world"))
+// console.log(regexFindPatternInString(/hello/, "hello world"));

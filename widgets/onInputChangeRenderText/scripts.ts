@@ -1,6 +1,6 @@
 ;((): void => {
-    const inputText: HTMLElement = document.querySelector(".js-input-text")!
-    const displayElement: HTMLElement = document.querySelector(".js-display-element")!
+    const inputText = document.querySelector(".js-input-text") as HTMLInputElement
+    const displayElement = document.querySelector(".js-display-element") as HTMLElement
 
     function onChangeHandler(e: Event): void {
         const inputValue = (e.target as HTMLInputElement).value
