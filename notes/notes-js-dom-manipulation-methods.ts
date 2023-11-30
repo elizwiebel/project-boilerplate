@@ -37,6 +37,12 @@
     // The Element.before() method inserts a set of Node or string objects in the children list of this Element's parent, just before this Element. String objects are inserted as equivalent Text nodes.
     element.before("Hello World");
 
+    // The insertAdjacentElement() method of the Element interface inserts a given element node at a given position relative to the element it is invoked upon.
+    element.insertAdjacentElement("beforebegin", div);
+    element.insertAdjacentElement("afterbegin", div);
+    element.insertAdjacentElement("beforeend", div);
+    element.insertAdjacentElement("afterend", div);
+
     // The Element.remove() method removes the element from the DOM.
     element.remove();
 
