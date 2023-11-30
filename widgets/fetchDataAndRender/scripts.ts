@@ -4,8 +4,8 @@
         url: string;
     }[];
 
-    const dataContainer = document.getElementById("data-container") as HTMLElement;
-    const button = document.querySelector(".btn") as HTMLElement;
+    const dataContainer = document.getElementById("data-container")! as HTMLElement;
+    const button = document.querySelector(".btn")! as HTMLElement;
 
     async function fetchData(url: string): Promise<Pokemon> {
         const response = await fetch(url);

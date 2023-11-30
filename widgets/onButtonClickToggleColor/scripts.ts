@@ -1,6 +1,6 @@
 ((): void => {
-    const button = document.querySelector(".js-toggle-btn") as HTMLElement;
-    const content = document.querySelector(".js-toggle-content") as HTMLElement;
+    const button = document.querySelector(".js-toggle-btn")! as HTMLElement;
+    const content = document.querySelector(".js-toggle-content")! as HTMLElement;
 
     function btnClickHandler(): void {
         console.log("click");

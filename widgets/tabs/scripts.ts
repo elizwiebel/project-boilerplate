@@ -1,6 +1,6 @@
 ((): void => {
-    const tabBtns = document.querySelectorAll(".tab-btn") as NodeListOf<HTMLElement>;
-    const tabContents = document.querySelectorAll(".tab-content") as NodeListOf<HTMLElement>;
+    const tabBtns = document.querySelectorAll(".tab-btn")! as NodeListOf<HTMLElement>;
+    const tabContents = document.querySelectorAll(".tab-content")! as NodeListOf<HTMLElement>;
 
     let currentTab = 0;
 

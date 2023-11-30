@@ -1,5 +1,4 @@
 "use strict";
-;
 (() => {
     const inputText = document.querySelector(".js-input-text");
     const displayElement = document.querySelector(".js-display-element");

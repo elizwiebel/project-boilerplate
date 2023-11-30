@@ -1,5 +1,5 @@
 ((): void => {
-    const accordionBtns = document.querySelectorAll(".accordion-btn") as NodeListOf<HTMLElement>;
+    const accordionBtns = document.querySelectorAll(".accordion-btn")! as NodeListOf<HTMLElement>;
 
     for (const btn of accordionBtns) {
         btn.addEventListener("click", (e: Event): void => {

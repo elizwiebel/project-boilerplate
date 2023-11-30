@@ -4,9 +4,9 @@
         url: string;
     }[];
 
-    const button = document.querySelector(".btn") as HTMLInputElement;
-    const input = document.querySelector(".input") as HTMLInputElement;
-    const dataContainer = document.getElementById("data-container") as HTMLInputElement;
+    const button = document.querySelector(".btn")! as HTMLInputElement;
+    const input = document.querySelector(".input")! as HTMLInputElement;
+    const dataContainer = document.getElementById("data-container")! as HTMLInputElement;
 
     let resultsData: Pokemon = [];
 
