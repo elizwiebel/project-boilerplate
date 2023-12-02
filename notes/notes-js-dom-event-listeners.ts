@@ -43,6 +43,27 @@
     // The scroll event fires when an element has been scrolled. To detect when scrolling has completed, see the Element: scrollend event.
     element.addEventListener("scroll", (e) => genericHandler(e));
 
+    // The drag event is fired every few hundred milliseconds as an element or text selection is being dragged by the user.
+    element.addEventListener("drag", (e) => genericHandler(e));
+
+    // The drop event is fired when an element or text selection is dropped on a valid drop target. To ensure that the drop event always fires as expected, you should always include a preventDefault() call in the part of your code which handles the dragover event.
+    element.addEventListener("drop", (e) => genericHandler(e));
+
+    // The dragstart event is fired when the user starts dragging an element or text selection.
+    element.addEventListener("dragstart", (e) => genericHandler(e));
+
+    // The dragend event is fired when a drag operation is being ended (by releasing a mouse button or hitting the escape key).
+    element.addEventListener("dragend", (e) => genericHandler(e));
+
+    // The dragenter event is fired when a dragged element or text selection enters a valid drop target.
+    element.addEventListener("dragenter", (e) => genericHandler(e));
+
+    // The dragleave event is fired when a dragged element or text selection leaves a valid drop target.
+    element.addEventListener("dragleave", (e) => genericHandler(e));
+
+    // The dragover event is fired when an element or text selection is being dragged over a valid drop target (every few hundred milliseconds).
+    element.addEventListener("dragover", (e) => genericHandler(e));
+
     // The removeEventListener() method of the EventTarget interface removes an event listener previously registered with EventTarget.addEventListener() from the target. The event listener to be removed is identified using a combination of the event type, the event listener function itself, and various optional options that may affect the matching process; see Matching event listeners for removal.
     element.removeEventListener("click", genericHandler);
 
