@@ -1,4 +1,4 @@
-export default async function fetchDataAsyncMethod(url: string): Promise<any> {
+export async function fetchDataAsyncMethod(url: string): Promise<any> {
     try {
         const response = await fetch(url);
 
@@ -13,7 +13,7 @@ export default async function fetchDataAsyncMethod(url: string): Promise<any> {
         console.error(error);
     }
 }
-
+ 
 // TEST CONFIG
 // const LOCAL_SERVER_DATA_PATH = "http://127.0.0.1:5500/data/pokemon.json";
 // fetchDataAsyncMethod(LOCAL_SERVER_DATA_PATH).then((data) => console.log("data", data));

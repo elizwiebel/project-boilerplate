@@ -6,7 +6,7 @@
 // _ is the "_" character
 // The g flag means use a global search
 
-export default function regexReplaceNonAlphanumericChars(str: string, newChar: string): string {
+export function regexReplaceNonAlphanumericChars(str: string, newChar: string): string {
     return str.replace(/[\W_]/g, newChar);
 }
 
