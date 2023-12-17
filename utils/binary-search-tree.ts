@@ -45,7 +45,7 @@ export class BinarySeachTree {
 }
 
 // TEST CONFIG
-const bst = new BinarySeachTree();
+// const bst = new BinarySeachTree();
 
 // bst.insert(25);
 // bst.insert(10);
