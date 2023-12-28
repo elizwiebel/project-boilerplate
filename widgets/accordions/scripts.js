@@ -8,10 +8,12 @@
         }
         btn.addEventListener("click", (e) => {
             const panel = e.target.nextElementSibling;
-            if (!panel) return;
+            if (!panel)
+                return;
             if (panel.style.maxHeight) {
                 panel.removeAttribute("style");
-            } else {
+            }
+            else {
                 panel.style.maxHeight = panel.scrollHeight + "px";
             }
             e.target.classList.toggle("--open");

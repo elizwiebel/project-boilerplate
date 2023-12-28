@@ -1,0 +1,52 @@
+/* GLOBAL STYLES START */
+* {
+    box-sizing: border-box;
+}
+/* GLOBAL STYLES END */
+
+/* TEMPLATE STYLES START */
+.template-title {
+    margin-left: 1rem;
+}
+
+.template-container {
+    min-height: 250px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+/* TEMPLATE STYLES END */
+
+/* WIDGET STYLES START */
+.widget-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.box {
+    padding: 2rem;
+    border: 1px solid black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.one {
+    background-color: red;
+}
+
+.two {
+    background-color: blue;
+}
+
+.three {
+    background-color: green;
+}
+/* WIDGET STYLES END */
