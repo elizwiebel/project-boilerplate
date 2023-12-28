@@ -22,7 +22,6 @@
 .accordion-section {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 .accordion-btn {
@@ -34,6 +33,7 @@
     font-weight: bold;
     position: relative;
     background-color: lightgrey;
+    cursor: pointer;
 }
 
 .accordion-btn:after {
@@ -53,8 +53,11 @@
 .accordion-panel {
     padding-left: 0.5rem;
     max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease-in-out;
 }
+
 .accordion-panel.--open {
-    max-height: none;
+    max-height: 100%;
 }
 /* WIDGET STYLES END */
