@@ -1,5 +1,5 @@
 ((): void => {
-    // JS DOM EVENT LISTENERS
+    // JS DESTRUCTURING SYNTAX
 
     const pokemonData = {
         name: "squirtle",
